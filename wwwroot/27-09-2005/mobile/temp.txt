@@ -1,0 +1,7 @@
+<p nowrap>
+<%if(!rs.eof){while(!rs.eof){%>
+<a href="time.asp?&a=<%=rs(0)%>"><%=rs(1)%>&nbsp;<%=rs(2)%> - <%=rs(3)%></a><br/><%rs.MoveNext();
+}}else{
+%>Sorry no Athlete's<%
+}rs.Close();oConn.Close();%>
+</p>

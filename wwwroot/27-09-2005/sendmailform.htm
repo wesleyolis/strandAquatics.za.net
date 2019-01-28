@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+<script language="javascript">
+<!--
+function formatmsg()
+{
+var msg = document.all.msg.value,pos = 0;
+
+pos = msg.indexOf("\n",pos);
+
+while(pos != - 1)
+{
+msg = msg.replace("\n","<br>");
+pos = msg.indexOf("\n",pos)
+}
+
+document.all.msg.value = msg;
+}
+//-->
+</script>
+<body>
+
+<form method="POST" name="Mail" action="sendmail.asp">
+	<p><textarea rows="13" name="msg" cols="39"></textarea><input onclick='formatmsg();' type="submit" value="Submit" name="B1"><input type="reset" value="Reset" name="B2"><input  onclick='formatmsg();' type="button" value="Button" name="B3"></p>
+</form>
+
+</body>
+
+</html>

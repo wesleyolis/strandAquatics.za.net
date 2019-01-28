@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:x = 
+"urn:schemas-microsoft-com:office:excel" xmlns:a = 
+"urn:schemas-microsoft-com:office:access" xmlns:dt = 
+"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><HEAD><LINK 
+href="MEET_files/filelist.xml" type=text/xml rel=File-List><TITLE>MEET</TITLE>
+<META content=Access.Application name=ProgId>
+<META name=VBSForEventHandlers VALUE="TRUE">
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content=10.00.3420 name=DesignerVersion>
+<META content="HTML 4.0" name=vs_targetSchema>
+<OBJECT id=MSODSC tabIndex=-1 
+classid=CLSID:0002E553-0000-0000-C000-000000000046><PARAM NAME="XMLData" VALUE="<xml xmlns:a=&quot;urn:schemas-microsoft-com:office:access&quot;>&#13;&#10; <a:DataSourceControl>&#13;&#10;  <a:OWCVersion>10.0.0.6712         </a:OWCVersion>&#13;&#10;  <a:ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=C:\web\27-09-2005\example db2.mdb;Mode=Share Deny None;Extended Properties=&amp;quot;&amp;quot;;Persist Security Info=False;Jet OLEDB:System database=&amp;quot;&amp;quot;;Jet OLEDB:Registry Path=&amp;quot;&amp;quot;;Jet OLEDB:Database Password=&amp;quot;&amp;quot;;Jet OLEDB:Engine Type=0;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password=&amp;quot;&amp;quot;;Jet OLEDB:Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False</a:ConnectionString>&#13;&#10;  <a:MaxRecords>10000</a:MaxRecords>&#13;&#10;  <a:GridX>10</a:GridX>&#13;&#10;  <a:GridY>10</a:GridY>&#13;&#10;  <a:OfflineType>2</a:OfflineType>&#13;&#10;  <a:XMLLocation>0</a:XMLLocation>&#13;&#10;  <a:XMLDataTarget></a:XMLDataTarget>&#13;&#10;  <a:ConnectionFile></a:ConnectionFile>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>MEETNavLabel</a:ElementID>&#13;&#10;   <a:RecordsetLabel>MEET |0 of |2;MEET |0-|1 of |2</a:RecordsetLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Start</a:ElementID>&#13;&#10;   <a:ControlSource>Start</a:ControlSource>&#13;&#10;   <a:ChildLabel>Start_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Meet</a:ElementID>&#13;&#10;   <a:ControlSource>Meet</a:ControlSource>&#13;&#10;   <a:ChildLabel>Meet_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>MName</a:ElementID>&#13;&#10;   <a:ControlSource>MName</a:ControlSource>&#13;&#10;   <a:ChildLabel>MName_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>End</a:ElementID>&#13;&#10;   <a:ControlSource>End</a:ControlSource>&#13;&#10;   <a:ChildLabel>End_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>AgeUp</a:ElementID>&#13;&#10;   <a:ControlSource>AgeUp</a:ControlSource>&#13;&#10;   <a:ChildLabel>AgeUp_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Since</a:ElementID>&#13;&#10;   <a:ControlSource>Since</a:ControlSource>&#13;&#10;   <a:ChildLabel>Since_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Course</a:ElementID>&#13;&#10;   <a:ControlSource>Course</a:ControlSource>&#13;&#10;   <a:ChildLabel>Course_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Location</a:ElementID>&#13;&#10;   <a:ControlSource>Location</a:ControlSource>&#13;&#10;   <a:ChildLabel>Location_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Remarks</a:ElementID>&#13;&#10;   <a:ControlSource>Remarks</a:ControlSource>&#13;&#10;   <a:ChildLabel>Remarks_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>IndCharge</a:ElementID>&#13;&#10;   <a:ControlSource>IndCharge</a:ControlSource>&#13;&#10;   <a:ChildLabel>IndCharge_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>RelCharge</a:ElementID>&#13;&#10;   <a:ControlSource>RelCharge</a:ControlSource>&#13;&#10;   <a:ChildLabel>RelCharge_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>SurCharge</a:ElementID>&#13;&#10;   <a:ControlSource>SurCharge</a:ControlSource>&#13;&#10;   <a:ChildLabel>SurCharge_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Type</a:ElementID>&#13;&#10;   <a:ControlSource>Type</a:ControlSource>&#13;&#10;   <a:ChildLabel>Type_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Sanction</a:ElementID>&#13;&#10;   <a:ControlSource>Sanction</a:ControlSource>&#13;&#10;   <a:ChildLabel>Sanction_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>MaxIndEnt</a:ElementID>&#13;&#10;   <a:ControlSource>MaxIndEnt</a:ControlSource>&#13;&#10;   <a:ChildLabel>MaxIndEnt_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>MaxRelEnt</a:ElementID>&#13;&#10;   <a:ControlSource>MaxRelEnt</a:ControlSource>&#13;&#10;   <a:ChildLabel>MaxRelEnt_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>MaxEnt</a:ElementID>&#13;&#10;   <a:ControlSource>MaxEnt</a:ControlSource>&#13;&#10;   <a:ChildLabel>MaxEnt_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>RestrictBest</a:ElementID>&#13;&#10;   <a:ControlSource>RestrictBest</a:ControlSource>&#13;&#10;   <a:ChildLabel>RestrictBest_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>NonConform</a:ElementID>&#13;&#10;   <a:ControlSource>NonConform</a:ControlSource>&#13;&#10;   <a:ChildLabel>NonConform_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>EnforceQualifying</a:ElementID>&#13;&#10;   <a:ControlSource>EnforceQualifying</a:ControlSource>&#13;&#10;   <a:ChildLabel>EnforceQualifying_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>EnterAtQTime</a:ElementID>&#13;&#10;   <a:ControlSource>EnterAtQTime</a:ControlSource>&#13;&#10;   <a:ChildLabel>EnterAtQTime_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>MinAge</a:ElementID>&#13;&#10;   <a:ControlSource>MinAge</a:ControlSource>&#13;&#10;   <a:ChildLabel>MinAge_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>FacilityFee</a:ElementID>&#13;&#10;   <a:ControlSource>FacilityFee</a:ControlSource>&#13;&#10;   <a:ChildLabel>FacilityFee_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>TeamFee</a:ElementID>&#13;&#10;   <a:ControlSource>TeamFee</a:ControlSource>&#13;&#10;   <a:ChildLabel>TeamFee_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Instructions</a:ElementID>&#13;&#10;   <a:ControlSource>Instructions</a:ControlSource>&#13;&#10;   <a:ChildLabel>Instructions_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Altitude</a:ElementID>&#13;&#10;   <a:ControlSource>Altitude</a:ControlSource>&#13;&#10;   <a:ChildLabel>Altitude_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:GroupLevel>&#13;&#10;   <a:RecordSource>MEET</a:RecordSource>&#13;&#10;   <a:DefaultSort>[Start] DESC</a:DefaultSort>&#13;&#10;   <a:HeaderElementId>HeaderMEET</a:HeaderElementId>&#13;&#10;   <a:FooterElementId></a:FooterElementId>&#13;&#10;   <a:CaptionElementId></a:CaptionElementId>&#13;&#10;   <a:RecordNavigationElementId>NavigationMEET</a:RecordNavigationElementId>&#13;&#10;   <a:DataPageSize>1</a:DataPageSize>&#13;&#10;   <a:GroupFilterControl></a:GroupFilterControl>&#13;&#10;  </a:GroupLevel>&#13;&#10;  <a:Datamodel a:version=&quot;0816&quot;>&#13;&#10;   <a:SchemaRowsource a:id=&quot;MEET&quot; a:type=&quot;dscTable&quot;>&#13;&#10;    <a:SchemaField a:id=&quot;Meet&quot; a:datatype=&quot;3&quot; a:size=&quot;0&quot; a:iskey=&quot;1&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;MName&quot; a:datatype=&quot;130&quot; a:size=&quot;45&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Start&quot; a:datatype=&quot;7&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;End&quot; a:datatype=&quot;7&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;AgeUp&quot; a:datatype=&quot;7&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Since&quot; a:datatype=&quot;7&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Course&quot; a:datatype=&quot;130&quot; a:size=&quot;2&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Location&quot; a:datatype=&quot;130&quot; a:size=&quot;45&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Remarks&quot; a:datatype=&quot;130&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;IndCharge&quot; a:datatype=&quot;4&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;RelCharge&quot; a:datatype=&quot;4&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;SurCharge&quot; a:datatype=&quot;4&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Type&quot; a:datatype=&quot;130&quot; a:size=&quot;3&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Sanction&quot; a:datatype=&quot;130&quot; a:size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;MaxIndEnt&quot; a:datatype=&quot;2&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;MaxRelEnt&quot; a:datatype=&quot;2&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;MaxEnt&quot; a:datatype=&quot;2&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;RestrictBest&quot; a:datatype=&quot;11&quot; a:size=&quot;2&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;NonConform&quot; a:datatype=&quot;5&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;EnforceQualifying&quot; a:datatype=&quot;11&quot; a:size=&quot;2&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;EnterAtQTime&quot; a:datatype=&quot;11&quot; a:size=&quot;2&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;MinAge&quot; a:datatype=&quot;2&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;FacilityFee&quot; a:datatype=&quot;4&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;TeamFee&quot; a:datatype=&quot;4&quot; a:size=&quot;0&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Instructions&quot; a:datatype=&quot;130&quot; a:size=&quot;250&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Altitude&quot; a:datatype=&quot;2&quot; a:size=&quot;0&quot;/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:RecordsetDef a:id=&quot;MEET&quot;>&#13;&#10;    <a:PageField a:id=&quot;Meet&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Start&quot;/>&#13;&#10;    <a:PageField a:id=&quot;MName&quot;/>&#13;&#10;    <a:PageField a:id=&quot;End&quot;/>&#13;&#10;    <a:PageField a:id=&quot;AgeUp&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Since&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Course&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Location&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Remarks&quot;/>&#13;&#10;    <a:PageField a:id=&quot;IndCharge&quot;/>&#13;&#10;    <a:PageField a:id=&quot;RelCharge&quot;/>&#13;&#10;    <a:PageField a:id=&quot;SurCharge&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Type&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Sanction&quot;/>&#13;&#10;    <a:PageField a:id=&quot;MaxIndEnt&quot;/>&#13;&#10;    <a:PageField a:id=&quot;MaxRelEnt&quot;/>&#13;&#10;    <a:PageField a:id=&quot;MaxEnt&quot;/>&#13;&#10;    <a:PageField a:id=&quot;RestrictBest&quot;/>&#13;&#10;    <a:PageField a:id=&quot;NonConform&quot;/>&#13;&#10;    <a:PageField a:id=&quot;EnforceQualifying&quot;/>&#13;&#10;    <a:PageField a:id=&quot;EnterAtQTime&quot;/>&#13;&#10;    <a:PageField a:id=&quot;MinAge&quot;/>&#13;&#10;    <a:PageField a:id=&quot;FacilityFee&quot;/>&#13;&#10;    <a:PageField a:id=&quot;TeamFee&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Instructions&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Altitude&quot;/>&#13;&#10;   </a:RecordsetDef>&#13;&#10;  </a:Datamodel>&#13;&#10; </a:DataSourceControl>&#13;&#10;</xml>"></OBJECT>
+<META content="MSHTML 6.00.2900.2769" name=GENERATOR>
+<STYLE id=MSODAPDEFAULTS type=text/css>.MsoRecordSelectorTransparent {
+	LEFT: 0px; OVERFLOW: hidden; TOP: 0px
+}
+.MsoRecordSelectorDirty {
+	BACKGROUND-POSITION: -1px 0px; BACKGROUND-IMAGE: url(owc://GIF/#11242); BACKGROUND-REPEAT: no-repeat
+}
+.MsoRecordSelectorDirtyCurrent {
+	BACKGROUND-POSITION: -1px 0px; BACKGROUND-IMAGE: url(owc://GIF/#11242); BACKGROUND-REPEAT: no-repeat
+}
+.MsoRecordSelectorSelected {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; LEFT: 0px; OVERFLOW: hidden; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; TOP: 0px; HEIGHT: 100%; BACKGROUND-COLOR: buttonshadow
+}
+.MsoRecordSelectorSelectedImage {
+	BACKGROUND-POSITION: 1px 0px; BACKGROUND-IMAGE: url(owc://GIF/#11241); BACKGROUND-REPEAT: no-repeat
+}
+.MsoRecordSelectorCurrent {
+	BACKGROUND-POSITION: 1px 0px; BACKGROUND-IMAGE: url(owc://GIF/#11240); BACKGROUND-REPEAT: no-repeat
+}
+.MsoRecordSelector {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; OVERFLOW: hidden; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; HEIGHT: 100%; BACKGROUND-COLOR: gainsboro
+}
+.MsoNavRecordsetLabel {
+	BORDER-RIGHT: gainsboro 1px solid; BORDER-TOP: gainsboro 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 8pt; OVERFLOW: hidden; BORDER-LEFT: gainsboro 1px solid; WIDTH: 100%; CURSOR: default; PADDING-TOP: 0px; BORDER-BOTTOM: gainsboro 1px solid; FONT-FAMILY: Tahoma; POSITION: relative
+}
+.MsoNavButtonMouseDown {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; CURSOR: hand; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-COLOR: buttonshadow
+}
+.MsoNavToggleButtonMouseOver {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: buttonshadow
+}
+.MsoNavButtonMouseOver {
+	BORDER-RIGHT: highlight 1px solid; BORDER-TOP: highlight 1px solid; BORDER-LEFT: highlight 1px solid; BORDER-BOTTOM: highlight 1px solid; BACKGROUND-COLOR: buttonhighlight
+}
+.MsoNavButton {
+	BORDER-RIGHT: gainsboro 1px solid; BORDER-TOP: gainsboro 1px solid; BORDER-LEFT: gainsboro 1px solid; CURSOR: auto; BORDER-BOTTOM: gainsboro 1px solid; BACKGROUND-REPEAT: no-repeat
+}
+.MsoNavContainer {
+	BORDER-RIGHT: gainsboro 1px solid; BORDER-TOP: gainsboro 1px solid; Z-INDEX: -1; BORDER-LEFT: gainsboro 1px solid; CURSOR: hand; BORDER-BOTTOM: gainsboro 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: gainsboro
+}
+.MsoExpandCollapse {
+	CURSOR: hand
+}
+.MsoTitle {
+	DISPLAY: none; FONT-WEIGHT: normal; COLOR: inactivecaptiontext
+}
+.MsoRectangle {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; OVERFLOW: hidden; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+.Mso2dSectionBanner {
+	PADDING-RIGHT: 4px; DISPLAY: none; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; LEFT: 0px; BEHAVIOR: url(#DEFAULT#Mso2dSectionBanner); OVERFLOW: visible; PADDING-TOP: 2px; FONT-FAMILY: Tahoma; TOP: 0px; HEIGHT: 0.507cm; BACKGROUND-COLOR: buttonface
+}
+.Mso2dSection {
+	LEFT: 0px; BEHAVIOR: url(#DEFAULT#Mso2dSection); OVERFLOW: hidden; POSITION: relative; TOP: 0px; BACKGROUND-COLOR: transparent
+}
+.MsoHyperlinkDisplayText {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 3px; BORDER-TOP: 0px; PADDING-LEFT: 3px; OVERFLOW: hidden; BORDER-LEFT: 0px; CURSOR: hand; BORDER-BOTTOM: 0px; TEXT-ALIGN: left
+}
+.MsoBoundSpan {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 3px; BORDER-TOP: 0px; PADDING-LEFT: 3px; OVERFLOW: hidden; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; TEXT-ALIGN: left
+}
+.MsoTextbox {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; OVERFLOW: hidden; WIDTH: 2.539cm; HEIGHT: 0.502cm
+}
+.MSTheme-Label {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 3px; BORDER-TOP: 0px; PADDING-LEFT: 3px; OVERFLOW: visible; BORDER-LEFT: 0px; WIDTH: 2.539cm; BORDER-BOTTOM: 0px; HEIGHT: 0.396cm; TEXT-ALIGN: left
+}
+</STYLE>
+
+<SCRIPT language=Javascript id=MSODSC_Validation>
+validateBrowser();
+
+function validateBrowser() {
+	strVers=navigator.appVersion
+	strName=navigator.appName
+	strPlat=navigator.platform
+	intIndex1=strVers.indexOf("MSIE");
+	intIndex1=intIndex1+5
+	intIndex2=strVers.lastIndexOf(";");
+	intVer=strVers.substring(intIndex1, intIndex2)
+	intVer=parseInt(intVer)
+	if (strName=="Microsoft Internet Explorer" && strPlat=="Win32" && intVer>="5") {
+	validateOWC();
+	}
+	else {
+		strMsgGetIE="<TABLE cellSpacing=0 cellPadding=0 width='95%' border=0 height='8'><TR>"
+		strMsgGetIE+="<TD bgColor='#336699' height=25 width=15>&nbsp;</TD><TD bgColor='#666666' width=500px><FONT face=Tahoma "
+		strMsgGetIE+="size=4 color=white><b>&nbsp;Data Access Page Notification</B></FONT></TD></TR>"
+		strMsgGetIE+="<TR><TD bgColor='#cccccc' width=15>&nbsp;</TD><TD bgColor='#cccccc' width=500px><BR>"
+		strMsgGetIE+="<p><font face='Tahoma' size='2'>"
+		strMsgGetIE+="This page requires Windows IE 5.0 or higher.</p>"
+		strMsgGetIE+="<a href='http://www.microsoft.com/isapi/redir.dll?Prd=Office&Sbp=Access&Pver=10&Ar=DPdesigner&Sba=IEhome&Plcid=1033'><p align='center'>"
+		strMsgGetIE+="Click here to install the latest version of Internet Explorer.</a></font></p><br></TD></TR></TABLE>"
+		document.write(strMsgGetIE)
+	}
+}
+
+function validateOWC() {
+	if (MSODSC.object==null) {
+		strMsgGetOWC="<TABLE width='95%' cellpadding=0 cellspacing=0 border=0 height='8'>"
+		strMsgGetOWC+="<TR><TD bgColor='#336699' height=25 width=15>&nbsp;</TD><TD bgColor='#666666' width=500px>"
+		strMsgGetOWC+="<FONT face=Tahoma color=white size=4><B>&nbsp;&nbsp;"
+		strMsgGetOWC+="Data Access Page Notification</B></FONT></TD></TR><TR><TD bgColor='#cccccc' width=15>&nbsp;</TD>"
+		strMsgGetOWC+="<TD bgColor='#cccccc' width='500px'><BR>"
+		strMsgGetOWC+="<p><font face='Tahoma' size='2'>This page requires the Microsoft Office Web Components.</p>"
+		strMsgGetOWC+="</font><p><font face='Tahoma' size='2'>See the <a HRef='http://r.office.microsoft.com/r/rlidmsowcpub?clid=1033&p1=Microsoft Access&HelpLCID=1033'>Microsoft Office Web site</a> for more information. "
+		strMsgGetOWC+="</font></p><BR></TD></TR></TABLE>"
+		document.write(strMsgGetOWC)
+	}
+}
+
+</SCRIPT>
+
+<META content="Water 011" name="Microsoft Theme 2.00"><LINK id=mstheme 
+href="MEET_files\file0007.css" type=text/css rel=StyleSheet><LINK id=mstheme 
+href="MEET_files\file0008.css" type=text/css rel=StyleSheet><LINK id=mstheme 
+href="MEET_files\file0012.css" type=text/css rel=StyleSheet><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Hetty</o:Author>
+  <o:LastAuthor>Hetty</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2005-11-18T10:33:09Z</o:Created>
+  <o:LastSaved>2005-11-18T10:34:13Z</o:LastSaved>
+  <o:Company>n.t</o:Company>
+  <o:Version>11.6360</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--></HEAD>
+<BODY style="OVERFLOW: auto" vLink=#800080 link=#0000ff>
+<CENTER>
+<H1 class=MsoTitle id=HeadingText>Click here and type title text</H1></CENTER>
+<P>&nbsp;</P>
+<DIV class=Mso2dSectionBanner id=HeaderMEETBanner 
+style="MARGIN-LEFT: 0px; WIDTH: 15.133cm" tabIndex=-1><SPAN 
+id=HeaderMEETBannerCaption>Header: MEET</SPAN></DIV>
+<DIV class=Mso2dSection id=HeaderMEET 
+style="VISIBILITY: hidden; MARGIN-LEFT: 0px; WIDTH: 15.133cm; HEIGHT: 13.256cm"><SPAN 
+class=MSTheme-Label id=Start_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 0.053cm; HEIGHT: 0.45cm">Start:</SPAN><TEXTAREA class=MsoTextbox id=Start style="LEFT: 2.804cm; WIDTH: 69px; POSITION: absolute; TOP: 0.053cm; HEIGHT: 17px" tabIndex=15 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Meet_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 0.556cm; HEIGHT: 0.45cm">Meet:</SPAN><TEXTAREA class=MsoTextbox id=Meet style="LEFT: 2.804cm; WIDTH: 154px; POSITION: absolute; TOP: 0.556cm; HEIGHT: 17px" tabIndex=16 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=MName_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 1.059cm; HEIGHT: 0.45cm">MName:</SPAN><TEXTAREA class=MsoTextbox id=MName style="LEFT: 2.804cm; WIDTH: 229px; POSITION: absolute; TOP: 1.059cm; HEIGHT: 17px" tabIndex=17 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=End_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 1.562cm; HEIGHT: 0.45cm">End:</SPAN><TEXTAREA class=MsoTextbox id=End style="LEFT: 2.804cm; WIDTH: 69px; POSITION: absolute; TOP: 1.562cm; HEIGHT: 17px" tabIndex=18 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=AgeUp_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 2.065cm; HEIGHT: 0.45cm">AgeUp:</SPAN><TEXTAREA class=MsoTextbox id=AgeUp style="LEFT: 2.804cm; WIDTH: 69px; POSITION: absolute; TOP: 2.065cm; HEIGHT: 17px" tabIndex=19 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Since_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 2.593cm; HEIGHT: 0.45cm">Since:</SPAN><TEXTAREA class=MsoTextbox id=Since style="LEFT: 2.804cm; WIDTH: 69px; POSITION: absolute; TOP: 2.593cm; HEIGHT: 17px" tabIndex=20 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Course_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 3.096cm; HEIGHT: 0.45cm">Course:</SPAN><TEXTAREA class=MsoTextbox id=Course style="LEFT: 2.804cm; WIDTH: 46px; POSITION: absolute; TOP: 3.096cm; HEIGHT: 17px" tabIndex=21 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Location_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 3.599cm; HEIGHT: 0.45cm">Location:</SPAN><TEXTAREA class=MsoTextbox id=Location style="LEFT: 2.804cm; WIDTH: 229px; POSITION: absolute; TOP: 3.599cm; HEIGHT: 17px" tabIndex=22 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Remarks_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 4.102cm; HEIGHT: 0.45cm">Remarks:</SPAN><TEXTAREA class=MsoTextbox id=Remarks style="LEFT: 2.804cm; WIDTH: 154px; POSITION: absolute; TOP: 4.102cm; HEIGHT: 17px" tabIndex=23 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=IndCharge_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 4.605cm; HEIGHT: 0.45cm">IndCharge:</SPAN><TEXTAREA class=MsoTextbox id=IndCharge style="LEFT: 2.804cm; WIDTH: 154px; POSITION: absolute; TOP: 4.605cm; HEIGHT: 17px" tabIndex=24 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=RelCharge_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 5.133cm; HEIGHT: 0.45cm">RelCharge:</SPAN><TEXTAREA class=MsoTextbox id=RelCharge style="LEFT: 2.804cm; WIDTH: 154px; POSITION: absolute; TOP: 5.133cm; HEIGHT: 17px" tabIndex=25 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=SurCharge_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 5.636cm; HEIGHT: 0.45cm">SurCharge:</SPAN><TEXTAREA class=MsoTextbox id=SurCharge style="LEFT: 2.804cm; WIDTH: 154px; POSITION: absolute; TOP: 5.636cm; HEIGHT: 17px" tabIndex=26 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Type_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 6.139cm; HEIGHT: 0.45cm">Type:</SPAN><TEXTAREA class=MsoTextbox id=Type style="LEFT: 2.804cm; WIDTH: 51px; POSITION: absolute; TOP: 6.139cm; HEIGHT: 17px" tabIndex=27 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Sanction_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 6.642cm; HEIGHT: 0.45cm">Sanction:</SPAN><TEXTAREA class=MsoTextbox id=Sanction style="LEFT: 2.804cm; WIDTH: 79px; POSITION: absolute; TOP: 6.642cm; HEIGHT: 17px" tabIndex=28 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=MaxIndEnt_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 7.145cm; HEIGHT: 0.45cm">MaxIndEnt:</SPAN><TEXTAREA class=MsoTextbox id=MaxIndEnt style="LEFT: 2.804cm; WIDTH: 50px; POSITION: absolute; TOP: 7.145cm; HEIGHT: 17px" tabIndex=29 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=MaxRelEnt_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 7.673cm; HEIGHT: 0.45cm">MaxRelEnt:</SPAN><TEXTAREA class=MsoTextbox id=MaxRelEnt style="LEFT: 2.804cm; WIDTH: 50px; POSITION: absolute; TOP: 7.673cm; HEIGHT: 17px" tabIndex=30 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=MaxEnt_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 8.176cm; HEIGHT: 0.45cm">MaxEnt:</SPAN><TEXTAREA class=MsoTextbox id=MaxEnt style="LEFT: 2.804cm; WIDTH: 50px; POSITION: absolute; TOP: 8.176cm; HEIGHT: 17px" tabIndex=31 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=RestrictBest_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 8.679cm; HEIGHT: 0.45cm">RestrictBest:</SPAN><TEXTAREA class=MsoTextbox id=RestrictBest style="LEFT: 2.804cm; WIDTH: 61px; POSITION: absolute; TOP: 8.679cm; HEIGHT: 17px" tabIndex=32 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=NonConform_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 9.182cm; HEIGHT: 0.45cm">NonConform:</SPAN><TEXTAREA class=MsoTextbox id=NonConform style="LEFT: 2.804cm; WIDTH: 154px; POSITION: absolute; TOP: 9.182cm; HEIGHT: 17px" tabIndex=33 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=EnforceQualifying_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 9.685cm; HEIGHT: 0.45cm">EnforceQualifying:</SPAN><TEXTAREA class=MsoTextbox id=EnforceQualifying style="LEFT: 2.804cm; WIDTH: 61px; POSITION: absolute; TOP: 9.685cm; HEIGHT: 17px" tabIndex=34 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=EnterAtQTime_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 10.213cm; HEIGHT: 0.45cm">EnterAtQTime:</SPAN><TEXTAREA class=MsoTextbox id=EnterAtQTime style="LEFT: 2.804cm; WIDTH: 61px; POSITION: absolute; TOP: 10.213cm; HEIGHT: 17px" tabIndex=35 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=MinAge_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 10.716cm; HEIGHT: 0.45cm">MinAge:</SPAN><TEXTAREA class=MsoTextbox id=MinAge style="LEFT: 2.804cm; WIDTH: 50px; POSITION: absolute; TOP: 10.716cm; HEIGHT: 17px" tabIndex=36 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=FacilityFee_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 11.219cm; HEIGHT: 0.45cm">FacilityFee:</SPAN><TEXTAREA class=MsoTextbox id=FacilityFee style="LEFT: 2.804cm; WIDTH: 154px; POSITION: absolute; TOP: 11.219cm; HEIGHT: 17px" tabIndex=37 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=TeamFee_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 11.722cm; HEIGHT: 0.45cm">TeamFee:</SPAN><TEXTAREA class=MsoTextbox id=TeamFee style="LEFT: 2.804cm; WIDTH: 154px; POSITION: absolute; TOP: 11.722cm; HEIGHT: 17px" tabIndex=38 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Instructions_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 12.225cm; HEIGHT: 0.45cm">Instructions:</SPAN><TEXTAREA class=MsoTextbox id=Instructions style="LEFT: 2.804cm; WIDTH: 304px; POSITION: absolute; TOP: 12.225cm; HEIGHT: 17px" tabIndex=39 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Altitude_Label 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 12.753cm; HEIGHT: 0.45cm">Altitude:</SPAN><TEXTAREA class=MsoTextbox id=Altitude style="LEFT: 2.804cm; WIDTH: 50px; POSITION: absolute; TOP: 12.753cm; HEIGHT: 17px" tabIndex=40 MsoTextAlign="General"></TEXTAREA></DIV>
+<DIV class=Mso2dSectionBanner id=NavigationMEETBanner 
+style="MARGIN-LEFT: 0px; WIDTH: 15.133cm" tabIndex=-1><SPAN 
+id=NavigationMEETBannerCaption>Navigation: MEET</SPAN></DIV>
+<DIV class=Mso2dSection id=NavigationMEET 
+style="VISIBILITY: hidden; MARGIN-LEFT: 0px; WIDTH: 15.133cm; HEIGHT: 0.846cm; BACKGROUND-COLOR: gainsboro">
+<TABLE class=MsoNavContainer id=MEETNavigation 
+style="LEFT: 4px; WIDTH: 568px; POSITION: absolute; TOP: 4px; HEIGHT: 18px" 
+cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavFirst id=MEETNavFirst tabIndex=1 height=20 
+      src="owc://GIF/#11200" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavPrevious id=MEETNavPrevious tabIndex=2 height=20 
+      src="owc://GIF/#11202" width=20></TD>
+    <TD style="VERTICAL-ALIGN: middle; WIDTH: 100%; TEXT-ALIGN: center" 
+      noWrap><SPAN class=MsoNavRecordsetLabel id=MEETNavLabel 
+      style="VISIBILITY: hidden" tabIndex=3>MEET |0 of |2</SPAN></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavNext id=MEETNavNext tabIndex=4 height=20 
+      src="owc://GIF/#11204" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavLast id=MEETNavLast tabIndex=5 height=20 
+      src="owc://GIF/#11206" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavAddNew id=MEETNavNew tabIndex=6 height=20 
+      src="owc://GIF/#11208" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavDelete id=MEETNavDelete tabIndex=7 height=20 
+      src="owc://GIF/#11210" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavSave id=MEETNavSave tabIndex=8 height=20 
+      src="owc://GIF/#11214" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavUndo id=MEETNavUndo tabIndex=9 height=20 
+      src="owc://GIF/#11212" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavSortAsc id=MEETNavSortAscending tabIndex=10 height=20 
+      src="owc://GIF/#11216" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavSortDesc id=MEETNavSortDescending tabIndex=11 height=20 
+      src="owc://GIF/#11218" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavFilter id=MEETNavFilterBySelection tabIndex=12 height=20 
+      src="owc://GIF/#11220" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavToggleFilter id=MEETNavFilterToggle tabIndex=13 height=20 
+      src="owc://GIF/#11222" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavHelp id=MEETNavHelp tabIndex=14 height=20 
+      src="owc://GIF/#11224" width=20></TD></TR></TBODY></TABLE></DIV>
+<P>&nbsp;</P></BODY></HTML>

@@ -1,0 +1,5 @@
+AuthName Protected
+AuthUserFile c:\Domains\strandaquatics.com\secure\.htpasswd
+AuthGroupFile c:\Domains\strandaquatics.com\secure\.htgroups
+Require group
+Require user Administrator Admin 

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml"> 
+
+
+<wml>
+<card id="card1">
+<select name="schoolname">
+<option value="HTML">HTML Tutorial</option>
+<option value="XML">XML Tutorial</option>
+</select>
+<anchor>Go
+<go href="#card2"/> 
+</anchor>
+</card> 
+
+To use the variable we created in the example above:
+
+<card id="card2">
+<p>You selected: $(schoolname)</p>
+</card> 
+</wml>

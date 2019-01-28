@@ -1,0 +1,54 @@
+if(Request.QueryString("f") == "m")
+{
+	var oConn;	
+	var rs;		
+	var filePath;	
+	filePath = Server.MapPath("../Swim.mdb");
+	oConn = Server.CreateObject("ADODB.Connection");
+	oConn.Open("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" +filePath);
+	
+	var Athlete = Request.QueryString("a");
+	var Meet = Request.QueryString("m");
+	var Course = Request.QueryString("C");
+	rs = oConn.Execute("SELECT IIf([NT]=5,'DQ',IIf([NT]=2,'NS',[SCORE])) AS [time], RESULT.STROKE, RESULT.DISTANCE, RESULT.F_P, RESULT.I_R, Day([Start]) & '/' & Month([Start]) & '/' & Right(Year([Start]),1) AS SDate, Left([MName],14) AS LMName FROM RESULT INNER JOIN MEET ON RESULT.MEET = MEET.Meet WHERE (((RESULT.COURSE)='L') AND ((RESULT.ATHLETE)=" + Athlete +") AND ((RESULT.MEET)=" + Meet +")) ORDER BY RESULT.STROKE, RESULT.DISTANCE;");
+
+	var strokes = new Array("","Freestyle","BackStroke","Breast","Butterfly","Medley");
+%>
+<wml>
+<card id="stroke">
+
+<a href="#s1">Freestyle (free)</a><br />
+<a href="#s2">BackStroke (back)</a><br />
+<a href="#s3">BreastStroke (brst)</a><br />
+<a href="#s4">Butterfly (fly)</a><br />
+<a href="#s5">Medaly (IM)</a><br />
+
+
+<br />
+</card>
+<card><small>
+<%
+var str = -1;
+var cstroke = -1;
+if(!rs.eof){while(!rs.eof){
+str = rs(1).Value;%>
+<%if(cstroke != str){%>
+</small></card><card id="s<%=rs(1)%>">
+<b><%=strokes[rs(1)]%></b><br />
+<small>
+<%cstroke = str}%>
+<%=rs(2)%>m <%=CTime(rs(0))%>&nbsp;<%if(rs(3)=="F"){%>Fin <%}else{%>Pre <%}%><%if(rs(4)=="I"){%>Ind <%}else{%>Rel <%}%><%=rs(5) + " "%><%=rs(6)%><br/><br/>
+
+
+<%rs.MoveNext();}%>
+<%}else{%>Error<%}%>
+</small></card>
+<card id="s11">
+<b>FreeStyle</b><br />
+<small>100m 01:25.90 Fin Ind 02/05/6 Strand wintered</small><br/>
+</card>
+
+
+
+
+</wml>

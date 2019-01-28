@@ -1,0 +1,63 @@
+A:link {
+	COLOR: #b6f1bc
+}
+A:visited {
+	COLOR: #dbd7ff
+}
+A:active {
+	COLOR: #ffffff
+}
+BODY {
+	COLOR: #ffffff; BACKGROUND-COLOR: #4f68a7
+}
+H1 {
+	COLOR: #ffffff
+}
+H2 {
+	COLOR: #ffffff
+}
+MARQUEE {
+	COLOR: #ffffff
+}
+H3 {
+	COLOR: #ffffff
+}
+H4 {
+	COLOR: #ffffff
+}
+H5 {
+	COLOR: #ffffff
+}
+H6 {
+	COLOR: #ffffff
+}
+LABEL {
+	COLOR: #ffffff
+}
+.MSTHEME-LABEL {
+	COLOR: #ffffff
+}
+FIELDSET {
+	BORDER-LEFT-COLOR: #213d83; BORDER-BOTTOM-COLOR: #213d83; COLOR: #ffffff; BORDER-TOP-COLOR: #213d83; BORDER-RIGHT-COLOR: #213d83
+}
+LEGEND {
+	COLOR: #ffffff
+}
+SELECT {
+	BORDER-LEFT-COLOR: #b4bed6; BORDER-BOTTOM-COLOR: #b4bed6; COLOR: #000000; BORDER-TOP-COLOR: #b4bed6; BORDER-RIGHT-COLOR: #b4bed6
+}
+TABLE {
+	BORDER-LEFT-COLOR: #213d83; BORDER-BOTTOM-COLOR: #213d83; COLOR: #ffffff; BORDER-TOP-COLOR: #213d83; BORDER-RIGHT-COLOR: #213d83; table-border-color-light: #32558D; table-border-color-dark: #213D83
+}
+CAPTION {
+	COLOR: #ffffff
+}
+TH {
+	COLOR: #ffffff
+}
+HR {
+	COLOR: #213d83
+}
+TD {
+	BORDER-LEFT-COLOR: #213d83; BORDER-BOTTOM-COLOR: #213d83; BORDER-TOP-COLOR: #213d83; BORDER-RIGHT-COLOR: #213d83
+}

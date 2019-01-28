@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Task Given</title>
+<base target="main">
+</head>
+
+<script type="text/javascript" src="Ajax.js"></script>
+<script language="javascript">
+<!--
+
+//-->
+</script>
+
+<script type="text/javascript" src="athletestimes.js">
+<!--
+
+//-->
+</script>
+<script language="javascript">
+<!--
+/*
+writeHtmlUrl("contasdfct.htm",document);
+alert('sdf');
+
+writeHtmlUrl("../athlete_times.asp?athlete=634",document);
+writeHtmlUrl("contact1.htm",document);
+alert('sdfsd');*/
+/*
+var fun="";
+
+var xmlHttp2=GetXmlHttpObject();
+xmlHttp2.onreadystatechange=function() {if (xmlHttp2.readyState==4 || xmlHttp2.readyState=="complete")
+{if(xmlHttp2.status==200){fun
+parent.fun = xmlHttp2.responseText;
+alert("11test" + fun);
+}else{alert("Error, Code: "+ xmlHttp.status+"URL: "+url);}}}
+xmlHttp2.open("GET",'timeformat.js', true);
+xmlHttp2.send(null);
+setTimeout("alert('test' + fun);",4000);
+setTimeout("eval(fun+' ');alert('eval');",5000);
+//alert(Age(12,7));alert(Time(1286));
+//setTimeout("alert(Age(58,7)+':'+Time(1286));alert('age');",7000);
+
+fun = "function testing(){alert('hello');};\n\n\n\n\t";
+fun+="function testing2(){alert('hello');}";
+//fun = fun + " ";
+eval(fun);
+//alert(Age(0,99));
+
+
+testing();
+testing2();
+
+alert('df2d');*/
+
+var xmlHttp;
+
+if(xmlHttp=null)
+{document.location.replace("basicpage");} // if browser not support or error redirect page.
+
+xmlHttp=GetXmlHttpObject();
+xmlHttp.onreadystatechange = stateChanged;
+xmlHttp.open("GET","athletetimes_web.asp?ath=634", true);
+//xmlHttp.open("GET","fikeathletetimes[1].txt", true);
+
+xmlHttp.send(null);	
+
+
+function test()
+{
+ }
+
+function stateChanged() 
+{ 
+if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+   {if(xmlHttp.status==200){
+
+   		var array1D = xmlHttp.responseText.split(">");
+ 		//alert("downloaded");
+ 		
+ 		//process need commen js files
+ 		//getjs(eval(""+array1D[0]),0);
+
+ 		
+//test();
+
+ 		
+ 		
+ 		//setTimeout("alert(Score(2,2066));","5000");
+		//alert('df255');
+		document.write("<script type='text/javascript' src='athletestimes.js'></script>");
+		var array2D = new Array(array1D.length-4);
+ 		for(i=0;i<array1D.length-4;i++)
+ 		{array2D[i] = new Array();
+   		array2D[i] = array1D[i+3].split("|");
+   		}
+   		//alert(array2D.length); 
+	    DisAthTimes(array2D,[[0,1],[2]]);
+	  document.close();
+
+}else{alert("Error, Code: "+ xmlHttp.status);}
+   } 
+} 
+
+
+//-->
+</script>
+
+<body>
+Testing
+</body>
+
+</html>

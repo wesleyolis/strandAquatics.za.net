@@ -1,0 +1,1 @@
+alert('I am loaded from the external file "load_script_example1.js"')

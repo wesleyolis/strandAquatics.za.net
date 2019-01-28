@@ -1,0 +1,5 @@
+extern function sc (abbr)
+{
+WMLBrowser.setVar("club",abbr);
+WMLBrowser.go("#card2");
+}

@@ -1,0 +1,1 @@
+return (Lo>=Hi)?Hi+'yrs':(Lo>0&Hi<99)?Lo+' - '+Hi+'yrs':(Lo==0&Hi==99)?'Open':(Hi==99)?Lo+'&nbsp;&amp;&nbsp;Over':Hi+'&nbsp;&amp;&nbsp;Under';

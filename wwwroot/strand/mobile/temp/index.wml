@@ -1,0 +1,19 @@
+<?xml version="1.1"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml"> 
+<wml>
+
+<card ontimer="#menu"><timer value="30" />
+<p align="center">
+<b><big>Welcome</big></b><br />
+to<br />
+<em>Strand Aquatics</em>
+<br /><u>Mobile</u><br /><br />
+<em>Designed by</em><br /><i>Wesley Oliver</i>
+</p>
+</card>
+
+<card id="menu" name="Strand Menu">
+<p align="center"><b><u>Strand Menu</u></b><br />
+<a href="team.asp">My Times</a></p>
+</card>
+</wml>
